@@ -14,7 +14,7 @@
         </div>
         <div>
           <span>抽出幾個：</span>
-          <span><input type="text" v-model="num"></span>
+          <span><input type="text" class="lottery-no" v-model="num"></span>
         </div>
       </div>
       
@@ -145,6 +145,7 @@ textarea {
   width:100%;
   height: 70vh;
   font-size: 28px;
+  margin-top: 5px;
 }
 
 .lottery {
@@ -178,6 +179,9 @@ textarea {
 }
 
 .lottery-no {
-  width: 25px;
+  width: 30px;
+  height: 24px;
+  font-size: 20px;
 }
+
 </style>
