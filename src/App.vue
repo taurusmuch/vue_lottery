@@ -6,30 +6,28 @@
     <section>
       <div class="lottery-data">
         <div>
-          <ul style="margin:0 auto">
-            <li style="float:left;font-size:20px">抽獎資料(每一筆一行)</li>
+          <ul class="margin-center">
+            <li class="font-20 float-l">抽獎資料(一筆一行)</li>
             <li style="float:right;">自動產生<input type="text" class="lottery-no" v-model="genNum">組抽獎編號<button type="button" class="gen-btn" v-on:click="genData">產生</button></li>
           </ul>
-          <textarea name="" id="" cols="30" rows="10" v-model="user_data"></textarea>
+          <textarea v-model="user_data"></textarea>
         </div>
         <div>
           <span>抽出幾個：</span>
           <span><input type="text" class="lottery-no" v-model="num"></span>
         </div>
       </div>
-      
       <div class="doing">
         <button type="button" class="lottery" v-on:click="doLottery()">抽獎</button>
         <button type="button" class="reset" v-on:click="user_data = genNum = result_data = '' ">清空</button>
       </div>
       <div class="winning">
         <div>
-          <div style="margin:0 auto; text-align:left;font-size:20px">中獎名單</div>
-          <textarea name="" id="" cols="30" rows="10" v-model="result_data"></textarea>
+          <div class="margin-center font-20 float-l">中獎名單</div>
+          <textarea v-model="result_data"></textarea>
         </div>
       </div>
     </section>
-    
     <footer>
       <div>Made with by <a class="author">Sun Kuo</a> on GitHub</div>
     </footer>
@@ -122,6 +120,7 @@ footer {
 }
 h1, h2 {
   font-weight: normal;
+  margin-top:0px;
 }
 
 ul {
@@ -184,4 +183,15 @@ textarea {
   font-size: 20px;
 }
 
+.margin-center {
+  margin:0 auto;
+}
+
+.font-20 {
+  font-size:20px;
+}
+
+.float-l {
+  float:left;
+}
 </style>
