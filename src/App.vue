@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <header>
-      <h1>線上抽獎產生器</h1>
+      <h1>線上抽獎(抽籤)</h1>
     </header>
     <section>
       <div class="lottery-data">
